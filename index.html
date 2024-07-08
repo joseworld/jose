@@ -119,6 +119,18 @@
   @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
   @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
 }
+#scrollToBottomBtn { 
+      position: fixed; 
+      bottom: 20px; 
+      right: 20px; 
+      display: none; 
+      padding: 10px 20px; 
+      background-color: #007bff; 
+      color: #fff; 
+      border: none; 
+      border-radius: 5px; 
+      cursor: pointer; 
+    } 
 </style>
 </head>
 <body>
@@ -147,13 +159,13 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
 					<li class="nav-item">
-						<a input type="button" onClick="document.getElementById('middle').scrollIntoView();">About</a>
+						<button id="scrollToBottomBtn">About</button>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="#down+#down" aria-expanded="false">Studies</a>
+						<a class="nav-link link text-black display-4" href="" aria-expanded="false">Studies</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="#end">Contact</a>
+						<a class="nav-link link text-black display-4" href="">Contact</a>
 					</li>
 				</ul>
 				
@@ -745,8 +757,22 @@
   <script src="https://r.mobirisesite.com/552331/assets/scrollgallery/scroll-gallery.js?rnd=1720460138894"></script>
   <script src="https://r.mobirisesite.com/552331/assets/theme/js/script.js?rnd=1720460138894"></script>
   <script src="https://r.mobirisesite.com/552331/assets/formoid/formoid.min.js?rnd=1720460138894"></script>
-  
-  
+  <script> 
+    window.onscroll = function() {scrollFunction()}; 
+ 
+    function scrollFunction() { 
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { 
+        document.getElementById("scrollToBottomBtn").style.display = "block"; 
+      } else { 
+        document.getElementById("scrollToBottomBtn").style.display = "none"; 
+      } 
+    } 
+ 
+    document.getElementById('scrollToBottomBtn').addEventListener('click', function() { 
+      document.body.scrollTop = document.body.scrollHeight; 
+      document.documentElement.scrollTop = document.documentElement.scrollHeight; 
+    }); 
+  </script> 
   
 </body>
 </html>
