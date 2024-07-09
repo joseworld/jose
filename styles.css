@@ -61,7 +61,7 @@ header {
 header .profile-image {
   margin-top: 50px;
   width: 150px;
-  height: 150px;
+  height: 149px;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
