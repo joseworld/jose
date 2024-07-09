@@ -166,16 +166,12 @@ a.social {
 h1, {
    color: black;
    font-weight: bold; text-align: center;
+   font-size: 1.3em;
 }
 h2, {
    color: black;
    font-weight: bold;
-}
-h1 {
-   font-size: 5px;
-}
-h2 {
-   font-size: 5xp;
+   font-size: 1.3em;
 }
 @media (max-width: 750px) {
    #background-video {
