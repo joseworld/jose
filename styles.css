@@ -163,6 +163,20 @@ a.social {
    bottom: 0;
    z-index: -1;
 }
+h1, {
+   color: black;
+   font-weight: bold; text-align: center;
+}
+h2, {
+   color: black;
+   font-weight: bold;
+}
+h1 {
+   font-size: 3rem;
+}
+h2 {
+   font-size: 3rem;
+}
 @media (max-width: 750px) {
    #background-video {
       display: none;
