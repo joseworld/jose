@@ -56,13 +56,6 @@ a:hover {
 }
 
 header {
-  text-align: center;
-  background: url('images/trophy.mp4') no-repeat ;
-  background-size: cover;
-  overflow: hidden;
-  padding-top: 60px;
-}
-header {
   line-height: 1.5;
 }
 header .profile-image {
@@ -158,6 +151,40 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
+}
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+h1, h2 {
+   color: white;
+   font-family: Trebuchet MS;
+   font-weight: bold; text-align: center;
+}
+
+h1 {
+   font-size: 6rem;
+   margin-top: 30vh;
+}
+
+h2 {
+   font-size: 3rem;
+}
+@media (max-width: 750px) {
+   #background-video {
+      display: none;
+   } 
+   body {
+      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+      background-size: cover;
+   }
 }
 a.twitter {
   background-image: url(images/twitter.svg);
