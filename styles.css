@@ -170,12 +170,12 @@ h1, h2 {
 }
 
 h1 {
-   font-size: 6rem;
+   font-size: 4rem;
    margin-top: 30vh;
 }
 
 h2 {
-   font-size: 3rem;
+   font-size: 1rem;
 }
 @media (max-width: 750px) {
    #background-video {
