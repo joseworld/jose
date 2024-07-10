@@ -171,7 +171,8 @@ h1, {
 h2, {
    color: black;
    font-weight: bold;
-   font-size: 1.3em; text-align: center;
+   font-size: 1.3em;
+  text-align: center;
 }
 @media (max-width: 750px) {
    #background-video {
