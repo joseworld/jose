@@ -189,8 +189,8 @@ a.insta {
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
-a.github {
-  background-image: url(images/github.svg);
+a.facebook {
+  background-image: url(images/facebook.svg);
 }
 a.social:hover {
   opacity: 1;
